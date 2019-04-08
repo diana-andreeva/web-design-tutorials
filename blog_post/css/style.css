@@ -31,32 +31,68 @@ h2 {
     margin-bottom: 10px;
 }
 
-.main-text {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-#author-text {
-    font-size: 22px;
-}
-
 .container {
     width: 1140px;
     margin: 20px auto 0 auto;
+}
+
+/******************
+* Blog post
+******************/
+.date {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 .blog-post {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
 }
 
+.blog-post img {
+    /* for aspect ratio */
+    height: 150px;
+    width: auto;
+}
+
+/******************
+* Other Blog posts
+******************/
 .other-posts {
     width: 25%;
     float: left;
 }
 
+.other {
+    margin-bottom: 40px;
+}
+
+/*************
+* Author box
+*************/
 .author-box {
     padding-top: 20px;
     border-top: 1px solid #333;
+}
+
+.author-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+#author-text {
+    font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 15px;
 }
