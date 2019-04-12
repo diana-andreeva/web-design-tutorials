@@ -36,6 +36,7 @@ section {
 
 .box {
     padding: 1%;
+    text-align: center;
 }
 
 /* ------------- HEADING ---------------*/
@@ -145,7 +146,7 @@ h3 {
 /*-----------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -191,4 +192,49 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/*-----------------------------------------------*/
+/* Section: Features */
+/*-----------------------------------------------*/
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------------*/
+/* Section: Meal Showcase */
+/*-----------------------------------------------*/
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%; /* means 100% width of his parent */
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7; /* with background: #000, look darker */
+    width: 100%; /* means 100% width of his container */
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03); /* not scale(1) because of white space bottom */
+    opacity: 1;
 }
