@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 700px;
+    min-height: 760px;
 }
 
 #home-section .dark-overlay {
@@ -34,15 +34,17 @@ body {
     opacity: 0.8;
 }
 
-#home-section .fas {
+#home-section .fas,
+#create-section .fas {
     color: #008ed6;
     background: #fff;
     padding: 5px;
     border-radius: 5px;
 }
 
-/* EXPLORE SECTION */
-#explore-section .fas {
+/* Explore Section */
+#explore-section .fas,
+#share-section .fas {
     color: #fff;
     background-color: #333;
     padding: 5px;
